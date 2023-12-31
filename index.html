@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set the character set and define the viewport for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the HTML document -->
+    <title>Scientific Calculator</title>
+    <!-- Link to an external stylesheet for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Calculator container -->
+    <div class="calculator">
+        <!-- Display input box with placeholder and read-only attribute -->
+        <input class="input-box" type="text" placeholder="0" readonly>
+        
+        <!-- Button groups for different calculator functions -->
+        <div class="buttons">
+            <!-- Reset button -->
+            <button class="reset">AC</button>
+            <!-- Delete button -->
+            <button class="delete">DEL</button>
+            <!-- Percentage button -->
+            <button>%</button>
+            <!-- Division button -->
+            <button>/</button>
+        </div>
+        
+        <div class="buttons">
+            <!-- Number buttons (7, 8, 9, multiplication) -->
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>*</button>
+        </div>
+        
+        <div class="buttons">
+            <!-- Number buttons (4, 5, 6, subtraction) -->
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+        </div>
+        
+        <div class="buttons">
+            <!-- Number buttons (1, 2, 3, addition) -->
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>+</button>
+        </div>
+        
+        <div class="buttons">
+            <!-- Number 0, decimal point, and equals button -->
+            <button>0</button>
+            <button>.</button>
+            <button class="equals">=</button>
+        </div>
+    </div>
+
+    <!-- Link to an external JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+
+</html>

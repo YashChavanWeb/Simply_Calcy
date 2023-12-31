@@ -1,0 +1,147 @@
+/* Importing Google Fonts for the project */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Fira+Sans:ital,wght@1,500&family=Georama:wght@400;500&family=Libre+Bodoni&family=Oswald:wght@200;300&family=Potta+One&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&family=Tapestry&display=swap');
+
+/* Resetting default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body of the document */
+body {
+    font-family: 'Roboto Condensed', sans-serif; /* Set default font family */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c36; /* Background color for the body */
+}
+
+/* Styling for the calculator container */
+.calculator {
+    border: 2px solid white;
+    padding: 20px; /* Add padding to the calculator */
+    border-radius: 20px;
+    background-color: #2d313a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the input box */
+input {
+    width: calc(100% - 40px);
+    padding: 20px;
+    margin: 20px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: #2d313a;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    border: 1px solid white;
+    outline: none;
+}
+
+/* Styling for the button container */
+.buttons {
+    display: flex;
+}
+
+/* Styling for the calculator buttons */
+button {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    font-size: 1.5rem;
+    background-color: #444c57;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+/* Styling for button hover effect */
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+/* Styling for button active state */
+button:active {
+    background-color: #54606f;
+}
+
+/* Styling for the equals button */
+.equals {
+    background-color: #2ecc71;
+}
+
+/* Styling for equals button in active state */
+.equals:active {
+    background-color: #71c393;
+}
+
+/* Styling for equals button on hover */
+.equals:hover {
+    background-color: #71c393;
+}
+
+/* Styling for the reset button */
+.reset {
+    background-color: #a94442;
+}
+
+/* Styling for reset button in active state */
+.reset:active {
+    background-color: #a75f5e;
+}
+
+/* Styling for reset button on hover */
+.reset:hover {
+    background-color: #a75f5e;
+}
+
+/* Styling for the delete button */
+.delete {
+    background-color: #f0ad4e;
+}
+
+/* Styling for delete button in active state */
+.delete:active {
+    background-color: #ecb66a;
+}
+
+/* Styling for delete button on hover */
+.delete:hover {
+    background-color: #ecb66a;
+}
+
+/* Media query for responsiveness on devices with a max-width of 600px */
+@media (max-width: 600px) {
+    .calculator {
+        max-width: 300px;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    /* Adjust the width and padding for the delete button in smaller screens */
+    .delete{
+       width: 50px;
+       padding: 2px;
+    }
+}

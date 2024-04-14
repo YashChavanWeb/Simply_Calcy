@@ -1,7 +1,3 @@
-Certainly! Here's a completed README file for your basic calculator project:
-
----
-
 # SimplyCalcy
 
 Welcome to SimplyCalcy, a basic calculator project built using CSS, HTML, and JavaScript. This simple yet functional calculator provides an interactive interface for performing addition, subtraction, multiplication, and division operations.
